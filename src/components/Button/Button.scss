@@ -1,0 +1,21 @@
+@import '../../global.scss';
+
+.button {
+  display: flex;
+  justify-content: end;
+
+  &-logout {
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+
+    @include mobile {
+      padding: 7px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+    }
+  }
+}

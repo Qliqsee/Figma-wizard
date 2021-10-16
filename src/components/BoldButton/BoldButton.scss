@@ -1,0 +1,32 @@
+@import '../../global.scss';
+
+.bold {
+  display: inline-block;
+  margin-right: 20px;
+
+  @include mobile {
+    margin-right: 0px;
+  }
+
+  &.active {
+    .bold-btn {
+      border: 1px solid #006aff;
+      background-color: #dceaff;
+    }
+  }
+  &-btn {
+    background-color: #f5f6fa;
+    color: #141737;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid #dceaff;
+    cursor: pointer;
+
+    @include mobile {
+      padding: 7px 9px;
+      font-size: 12px;
+    }
+  }
+}

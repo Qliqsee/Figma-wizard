@@ -1,0 +1,35 @@
+@import '../../global.scss';
+
+.intro {
+  // padding: 40px 0;
+  margin-top: 40px;
+
+  @include mobile {
+    margin-top: 20px;
+  }
+
+  &-step {
+    span {
+      color: #a5b4cb;
+      font-size: 13px;
+
+      @include mobile {
+        font-size: 12px;
+      }
+    }
+  }
+  &-title {
+    span {
+      text-transform: capitalize;
+      font-weight: 700;
+      font-size: 28px;
+      margin-top: 30px;
+      display: inline-block;
+
+      @include mobile {
+        font-size: 22px;
+        margin-top: 20px;
+      }
+    }
+  }
+}

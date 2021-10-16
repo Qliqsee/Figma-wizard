@@ -1,0 +1,63 @@
+@import '../../global.scss';
+
+.header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e9eef4;
+
+  @include mobile {
+    // display: none;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  &-nav {
+    display: flex;
+    margin-top: 50px;
+
+    @include mobile {
+      margin-top: 40px;
+      // justify-content: start;
+      // align-items: flex-start;
+    }
+    &-item {
+      @include mobile {
+        display: none;
+      }
+      &:not(:first-child) {
+        margin-left: 10%;
+      }
+      &-btn {
+        display: inline-block;
+        padding: 6px 11px;
+        text-align: center;
+        border-radius: 2px;
+        font-size: 12px;
+        background-color: #e4e9ef;
+        color: #a5b4cb;
+        margin-right: 10px;
+      }
+      &-text {
+        font-weight: 500;
+        font-size: 15px;
+        color: #a5b4cb;
+      }
+      &.active {
+        @include mobile {
+          display: block;
+          margin-left: 0;
+        }
+        .header-nav-item-btn {
+          color: white;
+          background-color: #006aff;
+        }
+        .header-nav-item-text {
+          color: #141737;
+
+          @include mobile {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

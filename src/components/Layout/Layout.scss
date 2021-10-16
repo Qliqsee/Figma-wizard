@@ -1,0 +1,12 @@
+@import '../../global.scss';
+
+.layout {
+  min-height: 100%;
+  background-color: white;
+  padding: 40px 100px;
+  min-width: 100%;
+
+  @include mobile {
+    padding: 20px;
+  }
+}
