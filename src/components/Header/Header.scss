@@ -35,11 +35,19 @@
         background-color: #e4e9ef;
         color: #a5b4cb;
         margin-right: 10px;
+
+        @include medium {
+          padding: 3px 7px;
+        }
       }
       &-text {
         font-weight: 500;
         font-size: 15px;
         color: #a5b4cb;
+
+        @include medium {
+          font-size: 10px;
+        }
       }
       &.active {
         @include mobile {

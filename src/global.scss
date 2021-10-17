@@ -24,8 +24,13 @@ body {
   width: 100%;
 }
 
+@mixin medium {
+  @media (max-width: 1100px) {
+    @content;
+  }
+}
 @mixin mobile {
-  @media (max-width: 968px) {
+  @media (max-width: 850px) {
     @content;
   }
 }
@@ -103,4 +108,7 @@ input[type='number'] {
     bottom: 0px;
     border-radius: 4px;
   }
+}
+::-webkit-scrollbar {
+  display: none;
 }
